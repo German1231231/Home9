@@ -1,5 +1,5 @@
 ﻿// Метод заполнения двумерного массива спирально
-void FillArray(int[,] arr)
+void FillArraySpirally(int[,] arr)
 {
     int numb = 1;
     int i = 0;
@@ -34,5 +34,5 @@ void PrintArray(int[,] arr)
 }
 
 int[,] array = new int[4,4];
-FillArray(array);
+FillArraySpirally(array);
 PrintArray(array);
