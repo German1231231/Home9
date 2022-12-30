@@ -1,8 +1,8 @@
-﻿int function(int m, int n)
+﻿int AckermanFunction(int m, int n)
 {
   if (m == 0) return n + 1;
-  else if (n == 0) return function(m - 1, 1);
-  else return function(m - 1, function(m, n - 1));
+  else if (n == 0) return AckermanFunction(m - 1, 1);
+  else return AckermanFunction(m - 1, AckermanFunction(m, n - 1));
 }
 
-Console.WriteLine(function(3,2));
+Console.WriteLine(AckermanFunction(3,2));
